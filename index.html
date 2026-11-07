@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiz &amp; Cia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="#">Raiz &amp; Cia</a>
+            <nav>
+                <ul>
+                    <li><a href="#kits">Kits</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#assinar">Assinar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="abertura">
+            <div>
+                <h1>Sementes da estação, uma caixa por mês.</h1>
+                <p>Escolhemos o que dá certo plantar agora, mandamos com terra, vaso de fibra e um guia de duas páginas. Você planta no domingo.</p>
+                <div class="botoes">
+                    <a class="botao" href="#assinar">Assinar</a>
+                    <a href="#kits">Ver os quatro kits</a>
+                </div>
+            </div>
+            <img src="./assets/mudas.png" alt="Uma pá cheia de terra e sementes">
+        </section>
+        <section id="kits">
+            <h2>Kits de agosto</h2>
+            <p>Frete incluso. Troque de kit quando quiser.</p>
+            <ul>
+                <li class="card">
+                    <h3>Cozinha</h3>
+                    <p>Manjericão, cebolinha, salsa e orégano.</p>
+                    <div class="card-pe">
+                        <p class="card-info"><span>4 sementes</span> <span>sol pleno</span></p>
+                        <p class="preco">R$ 79</p>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <h3>Salada</h3>
+                    <p>Rúcula, alface crespa, mostarda e agrião.</p>
+                    <div class="card-pe">
+                        <p class="card-info"><span>4 sementes</span> <span>meia-sombra</span></p>
+                        <p class="preco">R$ 89</p>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <h3>Varanda</h3>
+                    <p>Capuchinha, amor-perfeito e calêndula, flores que se come.</p>
+                    <div class="card-pe">
+                        <p class="card-info"><span>3 sementes</span> <span>sol pleno</span></p>
+                        <p class="preco">R$ 95</p>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <h3>Do jardineiro</h3>
+                    <p>Seleção fechada aqui, com uma espécie rara por mês.</p>
+                    <div class="card-pe">
+                        <p class="card-info"><span>6 sementes</span> <span>sortido</span></p>
+                        <p class="preco">R$ 119</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="planos">
+            <h2>Planos</h2>
+            <p>Valores por mês. Pausa e cancelamento na própria conta.</p>
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plano</th>
+                            <th>Sementes</th>
+                            <th>Entrega</th>
+                            <th>Guia</th>
+                            <th>Valor</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Semeador</td>
+                            <td>3 por caixa</td>
+                            <td>Mensal</td>
+                            <td>Digital</td>
+                            <td>R$ 79</td>
+                            <td>Disponível</td>
+                        </tr>
+                        <tr>
+                            <td>Horta Viva</td>
+                            <td>6 por caixa</td>
+                            <td>Mensal</td>
+                            <td>Impresso</td>
+                            <td>R$ 119</td>
+                            <td>Disponível</td>
+                        </tr>
+                        <tr>
+                            <td>Quintal</td>
+                            <td>10 por caixa</td>
+                            <td>Bimestral</td>
+                            <td>Impresso</td>
+                            <td>R$ 189</td>
+                            <td>Lista de espera</td>
+                        </tr>
+                        <tr>
+                            <td>Presente</td>
+                            <td>6 por caixa</td>
+                            <td>3 remessas</td>
+                            <td>Impresso</td>
+                            <td>R$ 329</td>
+                            <td>Sazonal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="assinar">
+            <h2>Assinar</h2>
+            <p>Confirmamos por e-mail em um dia útil. Nenhuma cobrança nesta etapa. A próxima remessa fecha em 12 de agosto.</p>
+            <form>
+                <div class="campo-metade">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Maria Andrade">
+                </div>
+                <div class="campo-metade">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="maria@email.com">
+                </div>
+                <div class="campo-metade">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="01310-200">
+                </div>
+                <div class="campo-metade">
+                    <label for="plano">Plano</label>
+                    <select name="plano" id="plano">
+                        <option value="semeador">Semeador, R$ 79</option>
+                        <option value="horta-viva" selected>Horta Viva, R$ 119</option>
+                        <option value="quintal">Quintal, R$ 189</option>
+                        <option value="presente">Presente, R$ 329</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Onde a horta vai ficar</legend>
+                    <input type="radio" id="janela" name="local" value="janela" checked>
+                    <label for="janela">Janela</label>
+                    <input type="radio" id="varanda" name="local" value="varanda">
+                    <label for="varanda">Varanda</label>
+                    <input type="radio" id="quintal" name="local" value="quintal">
+                    <label for="quintal">Quintal</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Frequência</legend>
+                    <input type="radio" id="mensal" name="frequencia" value="mensal" checked>
+                    <label for="mensal">Todo mês</label>
+                    <input type="radio" id="bimestral" name="frequencia" value="bimestral">
+                    <label for="bimestral">A cada dois meses</label>
+                    <input type="radio" id="unico" name="frequencia" value="unico">
+                    <label for="unico">Uma caixa só</label>
+                </fieldset>
+                <div>
+                    <label for="observacao">
+                        Observação para a entrega    
+                    </label>
+                    <textarea name="observacao" id="observacao" placeholder="A portaria recebe até as 18h"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="check" name="check">
+                    <label for="check">Quero o calendário de plantio por e-mail.</label>
+                </div>
+                <div class="botoes">
+                    <button class="botao" type="submit">Enviar</button>
+                    <button class="botao botao-secundario" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">                     
+            <p>Raiz &amp; Cia</p>
+            <p>&copy; 2026 Raiz &amp; Cia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
